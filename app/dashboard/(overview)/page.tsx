@@ -2,8 +2,13 @@ import CardWrapper from '@/app/ui/dashboard/cards';
 import RevenueChart from '@/app/ui/dashboard/revenue-chart';
 import { lusitana } from '@/app/ui/fonts';
 import { CardsSkeleton, LatestInvoicesSkeleton, RevenueChartSkeleton } from '@/app/ui/skeletons';
+import { Metadata } from 'next';
 import { Suspense } from 'react';
 import LatestInvoices from '../../ui/dashboard/latest-invoices';
+
+export const metadata: Metadata = {
+  title: 'Dashboard',
+};
 
 export default async function Page() {
   return (
